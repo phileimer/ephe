@@ -1,0 +1,5 @@
+# .epherc file in user's account
+# City     Longitude         Latitude          Altitude		Zone
+# Name[TAB]d[SPC]'[SPC]"[TAB]d[SPC]'[SPC]"[TAB]m[TAB]h
+Lyon	-4 50 00	45 46 00	248	1
+Dijon	-5 02 00	47 19 00	0	1
