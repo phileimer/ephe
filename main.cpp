@@ -4,14 +4,16 @@
 #include <iostream>
 using namespace std;
 
-#include <libintl.h>
 
 #include "include.h"
 
-#ifndef NO_CONFIGURE
-	#include "../config.h"
-#endif
+#ifndef NO_CONFIG_H
+	#include "config.h"
+#endif	// NO_CONFIG_H
 
+#ifdef HAVE_LIBINTL
+	#include <libintl.h>
+#endif // HAVE_LIBINTL
 
 
 int	main(int argc,char* argv[])
@@ -19,9 +21,11 @@ int	main(int argc,char* argv[])
 	Ephemerides	E;
 
 
+#ifdef HAVE_LIBINTL
 	setlocale (LC_ALL, "");
 	bindtextdomain (PACKAGE, LOCALEDIR);
 	textdomain (PACKAGE);
+#endif // HAVE_LIBINTL
 
 	wcout.imbue( locale("") );
 

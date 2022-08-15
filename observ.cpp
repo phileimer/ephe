@@ -131,7 +131,11 @@ double	Observateur::InitTemps(void)
 	tmtl=gmtime(&timet);
 	Inst.tmtu = *tmtl;
 
+#ifdef	HAVE_STRUCT_TM_GMTOFF
 	zone = Inst.tmlocal.tm_gmtoff;
+#else	// HAVE_STRUCT_TM_GMTOFF
+	zone = 0;
+#endif	// HAVE_STRUCT_TM_GMTOFF
 
 	Inst.Init(longitude, zone, TPSLOC);
 

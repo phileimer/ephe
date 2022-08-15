@@ -1,5 +1,5 @@
 prog = $(CROSS_COMPILE)g++
-compflags = -c -O2 -Wall $(addflags) #-g
+compflags = -c -O2 -Wall -DNO_CONFIG_H -DHAVE_LIBINTL $(addflags) #-g
 debugflag =
 # -ggdb
 #linkflags = -lstdc++

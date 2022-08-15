@@ -1,4 +1,3 @@
-#define	NO_CONFIGURE
 #define	PACKAGE	"ephe"
 #define	VERSION	"2.0"
 #define	AUTHOR	"Jean Philippe EIMER (phil.eimer@9online.fr)\n"

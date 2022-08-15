@@ -8,9 +8,9 @@
 
 #include "include.h"
 
-#ifndef NO_CONFIGURE
-	#include "../config.h"
-#endif
+#ifndef NO_CONFIG_H
+	#include "config.h"
+#endif // NO_CONFIG_H
 
 using namespace std;
 
