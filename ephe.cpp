@@ -95,7 +95,6 @@ void	Ephemerides::Affiche(bool hms)
 	Observ.Affiche();
 	wcout << endl << _(L"Obliquité") << L" : " /*<< setw(7)*/ << fixed << setprecision(4) << eps << L" °" << dunit;
 	AfficheCoord(HELIO,hms);
-	AfficheCoord(HELIO,hms);
 	AfficheCoord(GEO,hms);
 	AfficheCoord(GEOAPP,hms);
 	AfficheCoord(EQUA,hms);
