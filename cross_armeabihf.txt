@@ -19,7 +19,7 @@ ar = toolbinpath / arch + 'ar'
 ld = toolbinpath / arch + 'ld'
 objcopy = toolbinpath / arch + 'objcopy'
 strip = toolbinpath / arch + 'strip'
-pkgconfig = toolbinpath / arch + 'pkg-config'
+pkg-config = toolbinpath / arch + 'pkg-config'
 windres = toolbinpath / arch + 'windres'
 
 wx-config = toolbinpath / 'wx-config'
