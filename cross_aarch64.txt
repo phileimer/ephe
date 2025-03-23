@@ -1,5 +1,5 @@
 # file used to cross compile with meson
-#  meson setup BUILD --cross-file cross_armeabihf.txt
+#  meson setup BUILD --cross-file cross_aarch64.txt
 
 [constants]
 toolpath = '/opt/opi_arm64'
