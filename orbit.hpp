@@ -48,6 +48,8 @@ class	Orbite
 		double	v;	// anomalie vraie
 
 
+		Orbite() { pA=NULL; a=e=i=L=Omega=omegab=deltaL=aper=eper=Lper=vkper=rper=lper=bper=M=MRsp=omega=E=ER=r=v=0; };
+		Orbite(const Orbite&o) { *this = o; };
 		void	Init(Astre *);
 		Orbite	&operator =(const Orbite &);
 		void	Elements(double);	// initialisation des �l�ments

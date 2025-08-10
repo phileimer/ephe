@@ -11,6 +11,7 @@ class Vecteur
 
 		// constructeurs et destructeur
 		Vecteur(double,double,double,bool);
+		Vecteur(const Vecteur &v) { *this=v; };
 		Vecteur();
 		~Vecteur() {};
 
